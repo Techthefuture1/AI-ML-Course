@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Machine Learning Intensive Program | Transform Your Career</title>
+    <meta name="description" content="Join our 6-month AI & Machine Learning Intensive Program. 100% online, $100 total. Start with smartphone, master AI with laptop. Global access via WhatsApp, Telegram, Google Meet.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-bg: #0a0a0f;
+            --secondary-bg: #1a1a2e;
+            --accent-gradient: linear-gradient(135deg, #00d4ff 0%, #5b00ff 50%, #ff0080 100%);
+            --accent-blue: #00d4ff;
+            --accent-purple: #5b00ff;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b3;
+            --text-accent: #00d4ff;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--primary-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x:     ;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+            animation:pulseGlow 2.5s infinite;
+        }
+
+.btn-primary:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:
+        0 0 20px rgba(0,212,255,0.4),
+        0 0 40px rgba(91,0,255,0.25),
+        0 20px 40px rgba(0,212,255,0.35);
+}
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-blue);
+            border-color: var(--accent-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-blue);
+            color: white;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%2300d4ff" stop-opacity="0.1"/><stop offset="100%" stop-color="%2300d4ff" stop-opacity="0"/></radialGradient></defs><circle cx="20" cy="20" r="2" fill="url(%23a)"><animate attributeName="r" values="2;3;2" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/></circle><circle cx="80" cy="80" r="1.5" fill="url(%23a)"><animate attributeName="r" values="1.5;2.5;1.5" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/></circle></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+
+        .hero-content h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-content p {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 8rem 0;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            text-align: center;
+            margin-bottom: 4rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Value Proposition */
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .value-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent-gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 212, 255, 0.2);
+        }
+
+        .value-card i {
+            font-size: 3rem;
+            color: var(--accent-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Course Details */
+        .course-details {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 30px;
+            padding: 4rem;
+            border: 1px solid var(--border-color);
+            margin: 4rem 0;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .detail-item {
+            padding: 2rem;
+        }
+
+        .detail-item i {
+            font-size: 3rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        /* Curriculum Section */
+
+.curriculum-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+    margin-top:4rem;
+}
+
+.curriculum-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:24px;
+    padding:2.5rem;
+    position:relative;
+    overflow:hidden;
+    transition:all 0.35s ease;
+    backdrop-filter:blur(20px);
+}
+
+.curriculum-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,212,255,0.15);
+}
+
+.curriculum-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(135deg,#00d4ff 0%,#5b00ff 50%,#ff0080 100%);
+}
+
+.curriculum-number{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:1rem;
+    background:linear-gradient(135deg,#00d4ff,#ff0080);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.curriculum-card h3{
+    margin-bottom:1rem;
+    font-size:1.4rem;
+    color:white;
+}
+
+.curriculum-card p{
+    color:#b0b0b3;
+    line-height:1.8;
+}
+
+        /* Pricing */
+        .pricing {
+            text-align: center;
+        }
+
+        .price-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 2px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: var(--accent-gradient);
+            opacity: 0.1;
+            transform: rotate(30deg);
+        }
+
+        .price {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 1rem 0;
+        }
+        /* Payment Section */
+
+.payment-wrapper{
+    margin-top:4rem;
+    text-align:center;
+}
+
+.payment-text{
+    max-width:750px;
+    margin:0 auto 3rem;
+    color:#b0b0b3;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.payment-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:2rem;
+}
+
+.payment-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:24px;
+    padding:2.5rem 2rem;
+    transition:all 0.35s ease;
+    backdrop-filter:blur(20px);
+}
+
+.payment-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,212,255,0.15);
+}
+
+.payment-card i{
+    font-size:2.5rem;
+    margin-bottom:1.5rem;
+    background:linear-gradient(135deg,#00d4ff,#ff0080);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.payment-card h3{
+    color:white;
+    margin-bottom:0.5rem;
+}
+
+.payment-card span{
+    color:#9f9f9f;
+    font-size:0.95rem;
+}
+
+/* Testimonials */
+
+.testimonials{
+    padding:8rem 0;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:2rem;
+}
+
+.testimonial-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:24px;
+    padding:2.5rem;
+    backdrop-filter:blur(20px);
+    position:relative;
+    overflow:hidden;
+    transition:all 0.35s ease;
+}
+
+.testimonial-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(135deg,#00d4ff 0%,#5b00ff 50%,#ff0080 100%);
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,212,255,0.15);
+}
+
+.stars{
+    color:#FFD700;
+    font-size:1.2rem;
+    margin-bottom:1.5rem;
+    letter-spacing:3px;
+}
+
+.testimonial-text{
+    color:#d7d7d7;
+    line-height:1.8;
+    margin-bottom:2rem;
+}
+
+.student-info{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.student-avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#00d4ff,#5b00ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    color:white;
+}
+
+.student-info span{
+    color:#9f9f9f;
+    font-size:0.9rem;
+}
+
+.verified-badge{
+    margin-top:1.5rem;
+    display:inline-block;
+    padding:0.5rem 1rem;
+    border-radius:50px;
+    background:rgba(0,212,255,0.1);
+    color:#00d4ff;
+    font-size:0.85rem;
+    border:1px solid rgba(0,212,255,0.2);
+}
+
+/* Screenshot Proof Section */
+
+.proof-section{
+    margin-top:5rem;
+    text-align:center;
+}
+
+.proof-title{
+    font-size:2rem;
+    margin-bottom:2rem;
+    color:white;
+}
+
+.proof-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+}
+
+.proof-card{
+    background:rgba(255,255,255,0.04);
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.08);
+    transition:all 0.35s ease;
+}
+
+.proof-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,212,255,0.15);
+}
+
+.proof-card img{
+    width:100%;
+    display:block;
+}
+/* Location Section */
+
+.location-wrapper{
+    margin-top:4rem;
+}
+
+.location-card{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2rem;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    overflow:hidden;
+    backdrop-filter:blur(20px);
+}
+
+.location-content{
+    padding:3rem;
+}
+
+.location-tag{
+    display:inline-block;
+    padding:0.6rem 1rem;
+    border-radius:50px;
+    background:rgba(0,212,255,0.1);
+    color:#00d4ff;
+    border:1px solid rgba(0,212,255,0.2);
+    margin-bottom:1.5rem;
+    font-size:0.9rem;
+}
+
+.location-content h3{
+    font-size:2.5rem;
+    margin-bottom:1rem;
+    color:white;
+}
+
+.location-content p{
+    color:#b0b0b3;
+    line-height:1.9;
+    margin-bottom:2rem;
+}
+
+.location-features{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.location-feature{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    color:white;
+}
+
+.location-feature i{
+    width:45px;
+    height:45px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,212,255,0.08);
+    color:#00d4ff;
+}
+
+.location-map iframe{
+    width:100%;
+    height:100%;
+    min-height:450px;
+    border:none;
+}
+/* Trust Section */
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+    margin-top:4rem;
+}
+
+.trust-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:28px;
+    padding:2.5rem;
+    transition:all 0.35s ease;
+    backdrop-filter:blur(20px);
+    position:relative;
+    overflow:hidden;
+}
+
+.trust-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(135deg,#00d4ff 0%,#5b00ff 50%,#ff0080 100%);
+}
+
+.trust-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,212,255,0.15);
+}
+
+.trust-icon{
+    width:75px;
+    height:75px;
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:1.5rem;
+    background:rgba(0,212,255,0.08);
+    border:1px solid rgba(0,212,255,0.15);
+}
+
+.trust-icon i{
+    font-size:2rem;
+    background:linear-gradient(135deg,#00d4ff,#ff0080);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.trust-card h3{
+    color:white;
+    margin-bottom:1rem;
+    font-size:1.4rem;
+}
+
+.trust-card p{
+    color:#b0b0b3;
+    line-height:1.8;
+}
+/* Certificates Section */
+
+.certificate-wrapper{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:2rem;
+    margin-top:4rem;
+}
+
+.certificate-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    overflow:hidden;
+    backdrop-filter:blur(20px);
+    transition:all 0.35s ease;
+}
+
+.certificate-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,212,255,0.15);
+}
+
+.certificate-image{
+    overflow:hidden;
+}
+
+.certificate-image img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:transform 0.5s ease;
+}
+
+.certificate-card:hover .certificate-image img{
+    transform:scale(1.05);
+}
+
+.certificate-content{
+    padding:2rem;
+}
+
+.certificate-tag{
+    display:inline-block;
+    padding:0.5rem 1rem;
+    border-radius:50px;
+    background:rgba(0,212,255,0.1);
+    color:#00d4ff;
+    border:1px solid rgba(0,212,255,0.2);
+    font-size:0.85rem;
+    margin-bottom:1rem;
+}
+
+.certificate-content h3{
+    color:white;
+    margin-bottom:1rem;
+    font-size:1.5rem;
+}
+
+.certificate-content p{
+    color:#b0b0b3;
+    line-height:1.8;
+}
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            background: var(--accent-gradient);
+            padding: 6rem 2rem;
+            border-radius: 30px;
+            margin: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="white" opacity="0.1"><animate attributeName="r" values="1;2;1" dur="2s" repeatCount="indefinite"/></circle></svg>') repeat;
+            animation: float 15s infinite linear;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1.5rem;
+        }
+        /* Instructor Section */
+
+.instructor-card{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:3rem;
+    align-items:center;
+    margin-top:4rem;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    padding:3rem;
+    backdrop-filter:blur(20px);
+}
+
+.instructor-image img{
+    width:100%;
+    border-radius:24px;
+    object-fit:cover;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.instructor-tag{
+    display:inline-block;
+    padding:0.6rem 1rem;
+    border-radius:50px;
+    background:rgba(0,212,255,0.1);
+    color:#00d4ff;
+    border:1px solid rgba(0,212,255,0.2);
+    margin-bottom:1.5rem;
+    font-size:0.9rem;
+}
+
+.instructor-content h3{
+    font-size:2.5rem;
+    margin-bottom:1rem;
+    color:white;
+}
+
+.instructor-content p{
+    color:#b0b0b3;
+    line-height:1.9;
+    margin-bottom:2rem;
+}
+
+.instructor-highlights{
+    display:flex;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+.highlight-box{
+    background:rgba(255,255,255,0.04);
+    padding:1.2rem 1.5rem;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.08);
+    min-width:160px;
+}
+
+.highlight-box strong{
+    display:block;
+    color:white;
+    margin-bottom:0.4rem;
+}
+
+.highlight-box span{
+    color:#9f9f9f;
+    font-size:0.9rem;
+}
+
+        /* CTA Scarcity */
+
+.cta-subtext{
+    font-size:1.3rem;
+    margin-bottom:2rem;
+    color:rgba(255,255,255,0.92);
+}
+
+.countdown-box{
+    display:flex;
+    justify-content:center;
+    gap:1.5rem;
+    flex-wrap:wrap;
+    margin-bottom:3rem;
+}
+
+.countdown-item{
+    width:100px;
+    height:100px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(20px);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+.countdown-item span{
+    font-size:2rem;
+    font-weight:700;
+    color:white;
+}
+
+.countdown-item small{
+    color:rgba(255,255,255,0.8);
+    margin-top:0.3rem;
+}
+
+        /* FAQ */
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            padding: 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-answer {
+            padding: 0 2rem 2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer.active {
+            max-height: 200px;
+            padding: 2rem 2rem 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-bg);
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links a {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--accent-blue);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+           .nav-links{
+    display:none;
+}
+
+.mobile-menu{
+    display:flex;
+}
+
+header{
+    padding:0.8rem 0;
+}
+
+nav{
+    padding:0 1rem;
+}
+
+.logo{
+    font-size:1.4rem;
+}
+
+.hero{
+    min-height:90vh;
+    padding:7rem 1rem 3rem;
+}
+
+.hero-content h1{
+    font-size:2.7rem;
+    line-height:1.15;
+}
+
+.hero-content p{
+    font-size:1rem;
+    line-height:1.8;
+}
+
+.container{
+    padding:0 1rem;
+}
+
+section{
+    padding:5rem 0;
+}
+
+.section-title{
+    font-size:2.2rem;
+    margin-bottom:3rem;
+}
+
+.value-grid,
+.curriculum-grid,
+.testimonial-grid,
+.proof-grid,
+.details-grid{
+    grid-template-columns:1fr;
+}
+
+.value-card,
+.curriculum-card,
+.testimonial-card{
+    padding:2rem;
+}
+
+.course-details{
+    padding:2rem 1.2rem;
+    margin:2rem 0;
+    border-radius:24px;
+}
+
+.price-card{
+    padding:3rem 1.5rem;
+}
+
+.price{
+    font-size:4rem;
+}
+
+.cta-section{
+    padding:4rem 1.2rem;
+    border-radius:24px;
+}
+
+.cta-section h2{
+    font-size:2.3rem;
+    line-height:1.2;
+}
+
+.cta-subtext{
+    font-size:1rem;
+}
+
+.countdown-box{
+    gap:1rem;
+}
+
+.countdown-item{
+    width:85px;
+    height:85px;
+}
+
+.countdown-item span{
+    font-size:1.5rem;
+}
+
+.btn{
+    width:100%;
+    justify-content:center;
+}
+
+.hero-content div,
+.cta-section div{
+    flex-direction:column;
+    width:100%;
+}
+
+.social-links{
+    gap:1rem;
+}
+
+.social-links a{
+    width:50px;
+    height:50px;
+}
+.instructor-card{
+    grid-template-columns:1fr;
+    padding:2rem;
+}
+
+.instructor-content h3{
+    font-size:2rem;
+}
+.payment-grid{
+    grid-template-columns:1fr;
+}
+.certificate-wrapper{
+    grid-template-columns:1fr;
+}
+.trust-grid{
+    grid-template-columns:1fr;
+}
+.location-card{
+    grid-template-columns:1fr;
+}
+
+.location-content{
+    padding:2rem;
+}
+
+.location-content h3{
+    font-size:2rem;
+}
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">AI Intensive</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="application.html" class="btn btn-primary">Reserve My Spot</a>
+                <a href="#contact" class="btn btn-secondary">WhatsApp</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars" style="font-size: 1.5rem; color: var(--text-secondary);"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Master AI & Machine Learning</h1>
+            <p>AI is not the future anymore — it is the present shaping every industry. Join our 6-month intensive program and transform your career with future-proof skills. Global access, $100 total.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="application.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">
+                    <i class="fas fa-rocket"></i> Reserve My Spot
+                </a>
+                <a href="https://wa.me/1234567890?text=Hi%20I'm%20interested%20in%20the%20AI%20course" class="btn btn-secondary" style="font-size: 1.2rem; padding: 1rem 3rem;" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Join WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section id="why-ai" class="container fade-in">
+        <h2 class="section-title">Why Learn AI Now?</h2>
+        <div class="value-grid">
+            <div class="value-card">
+                <i class="fas fa-globe"></i>
+                <h3>Global Demand</h3>
+                <p>AI professionals are needed worldwide. Every industry needs AI experts — from healthcare to finance, automation to robotics.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>High-Income Careers</h3>
+                <p>AI skills unlock 6-figure salaries. Future-proof your career with in-demand expertise that companies fight to hire.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Real-World Impact</h3>
+                <p>Build projects that solve real problems. From predictive healthcare to automated business systems, your work matters.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-brain"></i>
+                <h3>Future-Proof Skills</h3>
+                <p>AI/ML knowledge compounds over time. What you learn today will multiply your opportunities for decades.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h3>Career Transformation</h3>
+                <p>From beginner to AI professional. Our students land jobs, build startups, and lead AI initiatives globally.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-clock"></i>
+                <h3>Flexible Learning</h3>
+                <p>100% online, evenings only. Perfect for working professionals and students worldwide. Start with just a smartphone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details -->
+    <section id="course" class="container">
+        <h2 class="section-title">AI & Machine Learning Intensive Program</h2>
+        <div class="course-details fade-in">
+            <div class="details-grid">
+                <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>6 Months Duration</h3>
+                    <p>Fridays & Saturdays evenings (flexible for workers & students)</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-laptop"></i>
+                    <h3>100% Online</h3>
+                    <p>WhatsApp • Telegram • Google Meet<br>Global access from anywhere</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Project-Based Learning</h3>
+                    <p>Weekly live classes + assignments + real-world projects + continuous assessments</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Smartphone Start</h3>
+                    <p>Begin with phone, laptop required later. Only serious, committed learners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Curriculum Section -->
+<section id="curriculum" class="container fade-in">
+
+    <h2 class="section-title">
+        What You Will Learn
+    </h2>
+
+    <div class="curriculum-grid">
+
+        <div class="curriculum-card">
+            <div class="curriculum-number">01</div>
+
+            <h3>Programming Foundations</h3>
+
+            <p>
+                Learn Python from beginner level, understand coding logic,
+                variables, loops, functions and problem solving.
+            </p>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-number">02</div>
+
+            <h3>Data Analysis</h3>
+
+            <p>
+                Work with real-world datasets, data cleaning,
+                visualization and analysis using modern AI tools.
+            </p>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-number">03</div>
+
+            <h3>Machine Learning</h3>
+
+            <p>
+                Build intelligent systems that can predict,
+                classify and learn from data automatically.
+            </p>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-number">04</div>
+
+            <h3>AI Projects</h3>
+
+            <p>
+                Create chatbots, recommendation systems,
+                automation tools and portfolio-ready projects.
+            </p>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-number">05</div>
+
+            <h3>Deployment & Tools</h3>
+
+            <p>
+                Learn GitHub, APIs, deployment basics,
+                collaboration tools and AI workflows.
+            </p>
+        </div>
+
+        <div class="curriculum-card">
+            <div class="curriculum-number">06</div>
+
+            <h3>Career Preparation</h3>
+
+            <p>
+                Build your portfolio, optimize LinkedIn,
+                prepare for freelance and remote opportunities.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="container fade-in">
+        <h2 class="section-title">Investment That Pays Forever</h2>
+        <div class="pricing">
+            <div class="price-card">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-secondary);">Total Program Fee</h3>
+                <div class="price">$100</div>
+                <p style="color: var(--text-secondary); margin: 2rem 0;">Pay 50% upfront ($50) to begin, remaining later</p>
+                <a href="application.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">Start My AI Journey</a>
+            </div>
+        </div>
+    </section>
+    <!-- Payment Methods -->
+<section id="payments" class="container fade-in">
+
+    <h2 class="section-title">
+        Easy & Secure Payment
+    </h2>
+
+    <div class="payment-wrapper">
+
+        <p class="payment-text">
+            Flexible payment options available for students worldwide.
+            Secure your slot with an initial deposit and complete payment later.
+        </p>
+
+        <div class="payment-grid">
+
+            <div class="payment-card">
+                <i class="fas fa-university"></i>
+                <h3>Bank Transfer</h3>
+                <span>Fast & Secure</span>
+            </div>
+
+            <div class="payment-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Paypal</h3>
+                <span>Instant Payment</span>
+            </div>
+
+            <div class="payment-card">
+                <i class="fas fa-wallet"></i>
+                <h3>Mobile Wallet</h3>
+                <span>Easy Mobile Transfer</span>
+            </div>
+
+            <div class="payment-card">
+                <i class="fas fa-credit-card"></i>
+                <h3>Credit/Debit Cards</h3>
+                <span>Credit/Debit Card Accepted</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="container testimonials fade-in">
+
+    <h2 class="section-title">Student Success Stories</h2>
+
+    <!-- Written Testimonials -->
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p class="testimonial-text">
+                “I joined with zero coding experience and within months I built my first AI chatbot.
+                This program completely changed my confidence.”
+            </p>
+
+            <div class="student-info">
+                <div class="student-avatar">A</div>
+
+                <div>
+                    <h4>Fatima Al-Zahraoui</h4>
+                    <span>AI Student • Morroco</span>
+                </div>
+            </div>
+
+            <div class="verified-badge">
+                ✔ Verified Student
+            </div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p class="testimonial-text">
+                “The live classes and mentorship kept me consistent.
+                I now understand machine learning far better than I expected.”
+            </p>
+
+            <div class="student-info">
+                <div class="student-avatar">S</div>
+
+                <div>
+                    <h4>Louis Wesenberg</h4>
+                    <span>ML Beginner • Germany</span>
+                </div>
+            </div>
+
+            <div class="verified-badge">
+                ✔ Verified Student
+            </div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p class="testimonial-text">
+                “Best investment I made this year.
+                The assignments and community made me take learning seriously.”
+            </p>
+
+            <div class="student-info">
+                <div class="student-avatar">D</div>
+
+                <div>
+                    <h4>Katherine Dahn</h4>
+                    <span>Aspiring AI Engineer • U.S</span>
+                </div>
+            </div>
+
+            <div class="verified-badge">
+                ✔ Verified Student
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Screenshot Proofs -->
+    <div class="proof-section">
+
+        <h3 class="proof-title">
+            Real Student Feedback
+        </h3>
+
+        <div class="proof-grid">
+
+            <div class="proof-card">
+                <img src="screenshot1.png" alt="Student feedback">
+            </div>
+
+            <div class="proof-card">
+                <img src="screenshot2.png" alt="Student feedback">
+            </div>
+
+            <div class="proof-card">
+                <img src="screenshot3.png" alt="Student feedback">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Instructor Section -->
+<section id="instructor" class="container fade-in">
+
+    <h2 class="section-title">
+        Meet Your Instructor
+    </h2>
+
+    <div class="instructor-card">
+
+        <div class="instructor-image">
+            <img src="images/instructor.jpg" alt="Instructor">
+        </div>
+
+        <div class="instructor-content">
+
+            <span class="instructor-tag">
+                AI Mentor • Developer • Instructor
+            </span>
+
+            <h3>
+                Peter Simone
+            </h3>
+
+            <p>
+                Passionate about helping students break into tech and AI from beginner level.
+                This program is designed to simplify complex AI concepts into practical,
+                real-world skills anyone can learn and apply globally.
+            </p>
+
+            <div class="instructor-highlights">
+
+                <div class="highlight-box">
+                    <strong>6 Months</strong>
+                    <span>Structured Mentorship</span>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Project-Based</strong>
+                    <span>Hands-on Learning</span>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Remote</strong>
+                    <span>Global Access</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Certificates Section -->
+<section id="certificates" class="container fade-in">
+
+    <h2 class="section-title">
+        Certifications & Credentials
+    </h2>
+
+    <div class="certificate-wrapper">
+
+        <div class="certificate-card">
+
+            <div class="certificate-image">
+                <img src="BCIT.jpg" alt="Certificate">
+            </div>
+
+            <div class="certificate-content">
+
+                <span class="certificate-tag">
+                    Verified Certification
+                </span>
+
+                <h3>
+                    AI & Machine Learning Certification
+                </h3>
+
+                <p>
+                    Professional training and continuous learning in
+                    Artificial Intelligence, Machine Learning and modern
+                    software development technologies.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="certificate-card">
+
+            <div class="certificate-image">
+                <img src="waterloo.jpg" alt="Certificate">
+            </div>
+
+            <div class="certificate-content">
+
+                <span class="certificate-tag">
+                    Tech Qualification
+                </span>
+
+                <h3>
+                    Software & Web Development
+                </h3>
+
+                <p>
+                    Experience building modern websites, AI-powered systems,
+                    responsive interfaces and real-world digital solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Trust Section -->
+<section id="trust" class="container fade-in">
+
+    <h2 class="section-title">
+        Why Students Trust This Program
+    </h2>
+
+    <div class="trust-grid">
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                <i class="fas fa-user-graduate"></i>
+            </div>
+
+            <h3>
+                Real Mentorship
+            </h3>
+
+            <p>
+                Learn directly through live guidance, structured mentorship,
+                practical assignments and active student support.
+            </p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+
+            <h3>
+                Practical Learning
+            </h3>
+
+            <p>
+                Every concept is backed by real projects and practical
+                implementation — not just theory.
+            </p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                <i class="fas fa-certificate"></i>
+            </div>
+
+            <h3>
+                Certificate of Completion
+            </h3>
+
+            <p>
+                Students receive a certificate after successful completion
+                of projects, assessments and participation.
+            </p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                <i class="fas fa-users"></i>
+            </div>
+
+            <h3>
+                Active Learning Community
+            </h3>
+
+            <p>
+                Join a supportive community of learners through WhatsApp,
+                Telegram and live collaborative sessions.
+            </p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+
+            <h3>
+                Global Remote Access
+            </h3>
+
+            <p>
+                Learn from anywhere in the world with flexible online access
+                designed for both students and working professionals.
+            </p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+                            <h3>
+                Transparent Learning Process
+            </h3>
+
+            <p>
+                Clear communication, organized learning structure,
+                accessible support and professional teaching standards.
+            </p> 
+            </div>
+                    <div class="trust-card">
+
+    <div class="trust-icon">
+        <i class="fas fa-briefcase"></i>
+    </div>
+    <h3>
+        Internship & Work Opportunities
+    </h3>
+
+    <p>
+        Outstanding students may be considered for internship,
+        collaboration and future work opportunities within our
+        growing tech network and projects.
+    </p>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Location Section -->
+<section id="location" class="container fade-in">
+
+    <h2 class="section-title">
+        Global Access • Based in Canada
+    </h2>
+
+    <div class="location-wrapper">
+
+        <div class="location-card">
+
+            <div class="location-content">
+
+                <span class="location-tag">
+                    Remote Learning Available Worldwide
+                </span>
+
+                <h3>
+                    Burnaby, Canada
+                </h3>
+
+                <p>
+                    This program operates online with students joining from
+                    different locations worldwide through WhatsApp,
+                    Telegram and live virtual classes.
+                </p>
+
+                <div class="location-features">
+
+                    <div class="location-feature">
+                        <i class="fas fa-globe"></i>
+                        <span>Worldwide Access</span>
+                    </div>
+
+                    <div class="location-feature">
+                        <i class="fas fa-video"></i>
+                        <span>Live Online Sessions</span>
+                    </div>
+
+                    <div class="location-feature">
+                        <i class="fas fa-users"></i>
+                        <span>Global Student Community</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="location-map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Burnaby,Canada&output=embed"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- CTA Section -->
+    <section id="apply" class="container">
+        <div class="cta-section fade-in">
+            <h2>Ready to Transform Your Career?</h2>
+            <p class="cta-subtext">
+    Only <strong>25 students</strong> will be accepted for this cohort.
+    Applications close soon once slots are filled.
+</p>
+
+<div class="countdown-box">
+
+    <div class="countdown-item">
+        <span id="days">00</span>
+        <small>Days</small>
+    </div>
+
+    <div class="countdown-item">
+        <span id="hours">00</span>
+        <small>Hours</small>
+    </div>
+
+    <div class="countdown-item">
+        <span id="minutes">00</span>
+        <small>Minutes</small>
+    </div>
+
+</div>
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <a href="application.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;" target="_blank">
+                    <i class="fas fa-paper-plane"></i> Join The Next AI Cohort
+                </a>
+                <a href="https://wa.me/1234567890?text=Hi%2C%20I'm%20ready%20to%20join%20the%20AI%20Intensive%20Program!" class="btn btn-secondary" style="font-size: 1.2rem; padding: 1.2rem 3rem; background: rgba(255,255,255,0.2); border-color: white; color: white;" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container fade-in">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do I need prior coding experience?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No prior experience needed! We start from basics and build up to advanced AI/ML concepts. Perfect for beginners.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What if I miss a live class?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>All classes are recorded and shared in our WhatsApp/Telegram groups. Plus, we have an active community for support.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I start with just a smartphone?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! First 2 months work perfectly on smartphone. Laptop recommended from month 3 for advanced projects.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What kind of projects will I build?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Real-world projects: Image recognition, chatbots, predictive models, recommendation systems, automation tools, and more!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Will I get a certificate?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Completion certificate + project portfolio to showcase to employers worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/YOUR_TELEGRAM" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:info@aiintensive.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">© 2025 AI Intensive Program. Transform your future today.</p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Global access • Lifetime access to materials • Career support</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 10, 15, 0.98)';
+                header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+            } else {
+                header.style.background = 'rgba(10, 10, 15, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Close other answers
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    if (a !== answer) {
+                        a.classList.remove('active');
+                        a.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current
+                answer.classList.toggle('active');
+                icon.style.transform = answer.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // WhatsApp click tracking (optional)
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', () => {
+                // You can add analytics here
+                console.log('WhatsApp clicked');
+            });
+        });
+        // Countdown Timer
+
+const targetDate = new Date("June 1, 2026 23:59:59").getTime();
+
+const countdown = setInterval(() => {
+
+    const now = new Date().getTime();
+
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+
+    if (distance < 0) {
+
+        clearInterval(countdown);
+
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+
+    }
+
+}, 1000);
+    </script>
+</body>
+</html>
