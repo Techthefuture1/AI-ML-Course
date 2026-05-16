@@ -1316,7 +1316,7 @@ section{
 
     z-index:20000;
 
-    transition:0.5s ease;
+    transition:1s ease;
 }
 
 .site-loader.hide{
@@ -1344,7 +1344,7 @@ section{
     border-top:
     5px solid #00d4ff;
 
-    animation:spin 0.5s linear infinite;
+    animation:spin 1s linear infinite;
 
     box-shadow:
     0 0 30px rgba(0,212,255,0.25);
@@ -2343,42 +2343,6 @@ const countdown = setInterval(() => {
     }
 
 }, 1000);
-            
-
-
-let startTime =
-localStorage.getItem(
-    "counterStartTime"
-);
-
-if(!startTime){
-
-    startTime = Date.now();
-
-    localStorage.setItem(
-        "counterStartTime",
-        startTime
-    );
-
-}
-
-const now = Date.now();
-
-const elapsedTime =
-now - startTime;
-
-const increases =
-Math.floor(
-    elapsedTime / interval
-);
-
-const currentCount =
-baseCount + (increases * increment);
-
-document.getElementById(
-    "studentCount"
-).innerText = currentCount;
-
 window.addEventListener(
 "load",
 
