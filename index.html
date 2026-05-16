@@ -372,15 +372,22 @@
         }
 
         .price-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: var(--accent-gradient);
-            opacity: 0.1;
-            transform: rotate(30deg);
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: var(--accent-gradient);
+    opacity: 0.1;
+    transform: rotate(30deg);
+
+    pointer-events: none;
+    z-index: 0;
+        }
+        .price-card *{
+    position: relative;
+    z-index: 2;
         }
 
         .price {
@@ -392,6 +399,69 @@
             background-clip: text;
             margin: 1rem 0;
         }
+        .launch-badge{
+
+    display:inline-block;
+
+    background:rgba(0,212,255,0.12);
+
+    border:1px solid rgba(0,212,255,0.35);
+
+    color:#00d4ff;
+
+    padding:0.7rem 1.2rem;
+
+    border-radius:40px;
+
+    font-size:0.85rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:1.5rem;
+}
+
+.price-wrapper{
+    margin:1.5rem 0;
+}
+
+.old-price{
+
+    font-size:1.5rem;
+
+    color:#8c8c8c;
+
+    text-decoration:line-through;
+
+    display:block;
+
+    margin-bottom:0.5rem;
+}
+
+.price-note{
+
+    color:#00d4ff;
+
+    font-size:0.95rem;
+
+    margin-top:1rem;
+}
+
+.price-features{
+
+    margin-top:2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+    color:#d7d7d7;
+
+    font-size:1rem;
+}
         /* Payment Section */
 
 .payment-wrapper{
@@ -1246,7 +1316,7 @@ section{
 
     z-index:20000;
 
-    transition:0.8s ease;
+    transition:0.5s ease;
 }
 
 .site-loader.hide{
@@ -1274,7 +1344,7 @@ section{
     border-top:
     5px solid #00d4ff;
 
-    animation:spin 1s linear infinite;
+    animation:spin 0.5s linear infinite;
 
     box-shadow:
     0 0 30px rgba(0,212,255,0.25);
@@ -1364,7 +1434,7 @@ section{
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Master AI & Machine Learning</h1>
-            <p>AI is not the future anymore — it is the present shaping every industry. Join our 6-month intensive program and transform your career with future-proof skills. Global access, $100 total.</p>
+            <p>AI is not the future anymore — it is the present shaping every industry. Join our 6-month intensive program and transform your career with future-proof skills. Global access.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="application.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">
                     <i class="fas fa-rocket"></i> Reserve My Spot
@@ -1380,16 +1450,10 @@ target="_blank">
             </div>
     </section>
             </div>
-        <div class="live-counter">
-
+        
     <div class="counter-dot"></div>
 
-    <span id="studentCount">
-        42
-    </span>
-
-    + Students Enrolled Worldwide
-
+    Applications Open Worldwide 🌍
 </div>
 
     <!-- Value Proposition -->
@@ -1536,17 +1600,77 @@ target="_blank">
 </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="container fade-in">
-        <h2 class="section-title">Investment That Pays Forever</h2>
-        <div class="pricing">
-            <div class="price-card">
-                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-secondary);">Total Program Fee</h3>
-                <div class="price">$100</div>
-                <p style="color: var(--text-secondary); margin: 2rem 0;">Pay 50% upfront ($50) to begin, remaining later</p>
-                <a href="application.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">Start My AI Journey</a>
+<section id="pricing" class="container fade-in">
+
+    <h2 class="section-title">
+        Investment That Pays Forever
+    </h2>
+
+    <div class="pricing">
+
+        <div class="price-card">
+
+            <span class="launch-badge">
+                LIMITED FOUNDING COHORT OFFER 🚀
+            </span>
+
+            <h3 style="
+                font-size:2rem;
+                margin-bottom:1rem;
+                color:var(--text-secondary);
+            ">
+                Total Program Fee
+            </h3>
+
+            <div class="price-wrapper">
+
+                <span class="old-price">
+                    $500
+                </span>
+
+                <div class="price">
+                    $200
+                </div>
+
             </div>
+
+            <p class="price-note">
+                Early launch discount for the first students joining this cohort.
+            </p>
+
+            <p style="
+                color:var(--text-secondary);
+                margin:2rem 0;
+                line-height:1.8;
+            ">
+                Begin with only <strong>$100 upfront</strong>
+                and complete the remaining payment later.
+            </p>
+
+            <div class="price-features">
+
+                <div>✔ 6 Months Intensive Mentorship</div>
+                <div>✔ Beginner Friendly</div>
+                <div>✔ Real AI Projects</div>
+                <div>✔ Certificate Included</div>
+
+            </div>
+
+            <a href="application.html"
+               class="btn btn-primary"
+               style="
+               font-size:1.1rem;
+               padding:1rem 3rem;
+               margin-top:2rem;
+               ">
+                Start My AI Journey
+            </a>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
     <!-- Payment Methods -->
 <section id="payments" class="container fade-in">
 
@@ -2221,11 +2345,6 @@ const countdown = setInterval(() => {
 }, 1000);
             
 
-const baseCount = 42;
-
-const increment = 4;
-
-const interval = 480000; // 4 minutes
 
 let startTime =
 localStorage.getItem(
